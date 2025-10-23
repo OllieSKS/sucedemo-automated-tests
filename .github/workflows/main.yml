@@ -1,0 +1,17 @@
+name: Cypress Docker Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  cypress-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Cypress in Docker
+        run: docker run -v ${{ github.workspace }}:/e2e -w /e2e cypress/included:latest --spec cypress/e2e/*.js

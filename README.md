@@ -1,1 +1,1 @@
-Project made just for academic purposes and internal studies about E2E automations.
+<br># Saucedemo Automated Tests<br>![Cypress](https://img.shields.io/badge/Cypress-17202C?style=flat&logo=cypress)<br><br>## Setup<br>npm install<br>npx cypress open<br><br>## Tests<br>- Saucedemo.login.RegressiveTest.cy: Valida auth válida/inválida.<br> </br> - Saucedemo.cart.RegressiveTest.cy: Valida Cart e remoção de item do cart<br>
