@@ -49,7 +49,7 @@ describe('Cart Flow', () => {
         cy.get('[id=continue]').click()
         cy.get('.title').should('have.text','Checkout: Overview'),
         cy.get('[id=finish]').click()
-        cy.get('.title').should('have.text','Checkout: Complete'),
+        cy.get('.title').should('have.text','Checkout: Complete!'),
         cy.get('.complete-header').should('have.text','Thank you for your order!')
 
 
