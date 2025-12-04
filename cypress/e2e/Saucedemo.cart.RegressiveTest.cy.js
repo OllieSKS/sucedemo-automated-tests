@@ -8,7 +8,7 @@ describe('Cart Flow', () => {
         
         cy.get('[id="user-name"]').type(Cypress.env('user'));
         cy.get('[id="password"]').type(Cypress.env('default_password'));
-        cy.get('[id="login-button"]').click()
+        //cy.get('[id="login-button"]').click()
         cy.get('.app_logo').should('have.text','Swag Labs')
         cy.get('[id=add-to-cart-sauce-labs-bike-light]').click()
         cy.get('.shopping_cart_badge').should('be.visible')
